@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shovit Nepal | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- sticky dropdown navbar -->
+    <nav>
+      <div class="menu">
+        <button id="menu-toggle">☰ Menu</button>
+        <ul id="dropdown">
+          <li><button onclick="toScreen('home')">Home</button></li>
+          <li><button onclick="toScreen('about')">About Me</button></li>
+          <li><button onclick="toScreen('service')">Service</button></li>
+          <li><button onclick="toScreen('gallery')">Gallery</button></li>
+          <li><button onclick="toScreen('contact')">Contact</button></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <section id="home">
+      <div class="home-content">
+        <div class="home-text">
+          <h2 class="home-more">Hello, I am</h2>
+          <h1 class="home-intro"><span class="text-gradient">Shovit Nepal</span></h1>
+          <p class="home-desc">Creative Designer & Full-Stack Developer</p>
+
+          <div class="more-info">
+            <button class="info-button" onclick="toScreen('about')">More Information about Me</button>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/shovit-nepal-7998b5235/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/nepalshovit" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nepalshovit/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:nepalshovit@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="home-image">
+          <img src="Image/2.jpg" alt="Shovit Nepal">
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <section id="about">
+      <h1 class="about-info">ABOUT ME</h1>
+      <div class="about-content">
+      <div class="about-para">
+      <p class="about-description">
+        I am a passionate and detail-oriented IT professional with a strong background in web development and a solid foundation in both front-end and back-end technologies. 
+        With hands-on experience in HTML, CSS, JavaScript, and modern frameworks like React and Node.js, I specialize in building responsive, user-friendly web applications that deliver excellent performance and functionality. 
+        My skill set enables me to develop full-stack solutions, from designing intuitive interfaces to implementing server-side logic. I have a keen eye for clean code, best practices, and continuous learning, which helps me stay updated with the latest trends in web development. 
+        I'm a collaborative team player who thrives in fast-paced environments and takes pride in solving complex technical problems.
+      </p>
+        <ul class="about-list" style="list-style-type: square;">
+          <li><b>Full Name :</b> Shovit Nepal</li>
+          <li><b>Date of birth :</b> June 12 1998</li>
+          <li><b>Job :</b> Freelancer, App and Web Developer, Networking</li>
+          <li><b>Email :</b> nepalshovit@gmail.com</li>
+          <li><b>Home Address :</b> Prativa Marg, Biratnagar 10, Morang</li>
+          <li><b>Current Address :</b> Balkumari, Lalitpur</li>
+
+        </ul>
+      </div>
+
+      
+    </div>
+    <div class="cv-button">
+        <button class="cv"> Download my CV</button>
+    </div>
+
+    <div class="about-more">
+      <h3 class="resume">RESUME</h3>
+      <h4 class="timeline-title">Experience</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Freelancer</h3>
+            <p>Designing web and mobile applications for multiple projects</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Front-end Developer</h3>
+            <p>+1 year of experience as a Front-end developer at Mantra Nepal</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>IT Support (Networking)</h3>
+            <p>+2 Years of Work experience as L1 and L2 support at Worldlink</p>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="timeline-title">Education</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Bachelor's Degree</h3>
+            <p>Patan Multiple Campus, Patandhoka, Lalitpur</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Higher Secondary (+2)</h3>
+            <p>Greenland International College, Morang</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>SLC</h3>
+            <p>Sagarmatha Higher Secondary English Boarding School, Morang</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+        
+     
+    </section>
+
+    <section id="service">
+        <h1 class="ser-info">SERVICES</h1>
+        <!-- <h2 class="ser-ask">SERVICES I PROVIDE</h2> -->
+        <div class="service-container">
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <div class="service-title">Web Page Development</div>
+            <div class="service-desc">Develop responsive and dynamic web pages with modern frameworks and best practices.</div>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="service-title">App Development</div>
+            <div class="service-desc">Build scalable and functional mobile apps for Android and iOS platforms.</div>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <div class="service-title">Graphic Designing</div>
+            <div class="service-desc">Design stunning visuals, logos, posters, and branding materials with creativity.</div>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-object-group"></i></div>
+            <div class="service-title">UI/UX Designing</div>
+            <div class="service-desc">Create intuitive and user-friendly interfaces for web and mobile platforms.</div>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="service-title">Networking</div>
+            <div class="service-desc">Set up, configure, and troubleshoot network systems and services securely.</div>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="service-title">Web Designing</div>
+            <div class="service-desc">Design modern, responsive, and attractive layouts for websites and applications.</div>
+          </div>
+
+
+        </div>
+        
+          <h3 class="ski-info">SKILLS I KNOW</h3>
+
+          <!-- <div class="skills">
+            <ul class="skills-list" style="list-style-type: square;">
+              <li><b>HTML/CSS :</b> I have a solid understanding of HTML and CSS for building responsive and visually appealing websites.</li>
+              <li><b>JavaScript:</b> I am proficient in JavaScript and use it to create dynamic and interactive web experiences</li>
+              <li><b>nodeJS:</b> I have experience with Node.js for building fast and scalable server-side applications.</li>
+              <li><b>React :</b> I am skilled in React for building modern, component-based user interfaces.</li>
+              <li><b>Photoshop :</b> I am proficient in Photoshop for creating and editing high-quality digital graphics and designs.</li>
+              
+    
+            </ul>
+          </div> -->
+          <section class="skills-section" id="skills">
+            <!-- <h2>My Skills</h2> -->
+             <div class="skills-box">
+            <div class="skill">
+              <p>HTML</p>
+              <div class="skill-bar">
+                <div class="skill-fill html">90%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>CSS</p>
+              <div class="skill-bar">
+                <div class="skill-fill css">90%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>JavaScript</p>
+              <div class="skill-bar">
+                <div class="skill-fill js">85%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>nodeJS</p>
+              <div class="skill-bar">
+                <div class="skill-fill nodejs">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>React</p>
+              <div class="skill-bar">
+                <div class="skill-fill react">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Photoshop</p>
+              <div class="skill-bar">
+                <div class="skill-fill photoshop">70%</div>
+              </div>
+            </div>
+             </div>
+          </section>
+
+            
+    </section>
+
+    <section id="gallery">
+      <h1 class="gallery-info">GALLERY</h1>
+      <h2 class="blog">MY BLOG</h2>
+      <div class="gallery-container">
+        <img src="Image/9.jpg" alt="9">
+        <img src="Image/2.jpg" alt="2">
+        <!-- <img src="Image/3.jpg" alt="3"> -->
+        <img src="Image/4.jpg" alt="4">
+        <img src="Image/5.jpg" alt="5">
+        <img src="Image/s.jpg" alt="s">
+        <img src="Image/6.jpg" alt="6">
+        <img src="Image/7.jpg" alt="7">
+        <img src="Image/8.jpg" alt="8">
+      </div>
+
+
+    </section>
+
+    <section id="contact">
+      
+      <h1 class="contact-info">CONTACT</h1>
+      <!-- <h2 class="contact-description">FEEL FREE TO CONTACT ME</h2> -->
+      <div class="contact-container">
+       <!-- contact-form -->
+      <form class="contact-form" action="https://formsubmit.co/nepalshovit@gmail.com" method="POST">
+        <!-- Optional: Add a hidden subject field -->
+        <input type="hidden" name="_subject" value="New message from your portfolio!">
+        <!-- Optional: Disable captcha for better user experience -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+        <textarea name="Message" placeholder="Your Note" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+     <!-- contact info boxes -->
+     <div class="contact-boxes">
+      <div class="contact-box">
+        <i class="icon fas fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p>nepalshovit@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-box">
+        <i class="icon fas fa-phone"></i>
+        <div>
+          <h3>Phone</h3>
+          <p>+977 9842087460</p>
+        </div>
+      </div>
+      <div class="contact-box">
+        <i class="icon fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Location</h3>
+          <p>Balkumari, Lalitpur, Nepal</p>
+        </div>
+      </div>
+     </div>
+    </div>
+
+     <div class="contact-links">
+      <a href="https://www.linkedin.com/in/shovit-nepal-7998b5235/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/nepalshovit" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/nepalshovit/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:nepalshovit@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+  </div>
+       
+
+       
+    </section>
+
+    <footer id="date" style="text-align:center;"></footer>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
