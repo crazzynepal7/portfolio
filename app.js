@@ -23,7 +23,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//onclick teh menu button 
+//onclick the menu button 
 function toScreen(id){
   const element = document.getElementById(id);
   if(element){

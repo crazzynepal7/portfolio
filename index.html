@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shovit Nepal</title>
+    <title>Shovit Nepal | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,20 +28,24 @@
     
     <section id="home">
       <div class="home-content">
-        <h1 class="home-intro">Hi! I am Shovit Nepal</h1>
-        <h2 class="home-more">Welcome to my portfolio</h2>
-        <p>Creative Designer & Developer</p>
+        <div class="home-text">
+          <h2 class="home-more">Hello, I am</h2>
+          <h1 class="home-intro"><span class="text-gradient">Shovit Nepal</span></h1>
+          <p class="home-desc">Creative Designer & Full-Stack Developer</p>
 
-        <div class="more-info">
-          <button class="info-button" onclick="toScreen('about')">More Information about Me</button>
+          <div class="more-info">
+            <button class="info-button" onclick="toScreen('about')">More Information about Me</button>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/shovit-nepal-7998b5235/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/nepalshovit" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nepalshovit/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:nepalshovit@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/shovit-nepal-7998b5235/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.facebook.com/nepalshovit" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/nepalshovit/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:nepalshovit@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="home-image">
+          <img src="Image/2.jpg" alt="Shovit Nepal">
         </div>
-
       </div>
       
       
@@ -48,10 +54,8 @@
     <section id="about">
       <h1 class="about-info">ABOUT ME</h1>
       <div class="about-content">
-        <img src="Image/1.jpg" alt="me">
-
       <div class="about-para">
-      <p class="about-discription">
+      <p class="about-description">
         I am a passionate and detail-oriented IT professional with a strong background in web development and a solid foundation in both front-end and back-end technologies. 
         With hands-on experience in HTML, CSS, JavaScript, and modern frameworks like React and Node.js, I specialize in building responsive, user-friendly web applications that deliver excellent performance and functionality. 
         My skill set enables me to develop full-stack solutions, from designing intuitive interfaces to implementing server-side logic. I have a keen eye for clean code, best practices, and continuous learning, which helps me stay updated with the latest trends in web development. 
@@ -76,17 +80,55 @@
 
     <div class="about-more">
       <h3 class="resume">RESUME</h3>
-      <h4 class="Experiance">My Work Experiances</h4>
-      <ul class="resume-list" style="list-style-type: square;"></ul>
-      <li><b>Networking :</b> +2 Year of Work experiance as a L1 support and L2 support at Worldlink</li>
-      <li><b>Front-end Developer :</b> +1 year of experiance as Front-end developer at Mantra Nepal</li>
-      <li><b>Freelancer :</b> Designing Web and app for multiple project</li>
+      <h4 class="timeline-title">Experience</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Freelancer</h3>
+            <p>Designing web and mobile applications for multiple projects</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Front-end Developer</h3>
+            <p>+1 year of experience as a Front-end developer at Mantra Nepal</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>IT Support (Networking)</h3>
+            <p>+2 Years of Work experience as L1 and L2 support at Worldlink</p>
+          </div>
+        </div>
+      </div>
 
-      <h4 class="Education">Education</h4>
-      <ul class="education-list" style="list-style-type: square;"></ul>
-      <li><b>SLC :</b> Sagarmatha Higher Secondary English Bording School, Morang</li>
-      <li><b>+2 :</b> Greenland International College, Morang</li>
-      <li><b>Bachelor :</b> Patan Multiple Campus, Patandokha, Lalitpur</li>
+      <h4 class="timeline-title">Education</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Bachelor's Degree</h3>
+            <p>Patan Multiple Campus, Patandhoka, Lalitpur</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Higher Secondary (+2)</h3>
+            <p>Greenland International College, Morang</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>SLC</h3>
+            <p>Sagarmatha Higher Secondary English Boarding School, Morang</p>
+          </div>
+        </div>
+      </div>
 
     </div>
       
@@ -211,35 +253,44 @@
     <section id="contact">
       
       <h1 class="contact-info">CONTACT</h1>
-      <!-- <h2 class="contact-discription">FEEL FREE TO CONTACT ME</h2> -->
+      <!-- <h2 class="contact-description">FEEL FREE TO CONTACT ME</h2> -->
       <div class="contact-container">
        <!-- contact-form -->
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="phone" placeholder="Your Phone Number" required>
-        <textarea placeholder="Your Note" rows="5" required></textarea>
+      <form class="contact-form" action="https://formsubmit.co/nepalshovit@gmail.com" method="POST">
+        <!-- Optional: Add a hidden subject field -->
+        <input type="hidden" name="_subject" value="New message from your portfolio!">
+        <!-- Optional: Disable captcha for better user experience -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="tel" name="Phone" placeholder="Your Phone Number" required>
+        <textarea name="Message" placeholder="Your Note" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
 
      <!-- contact info boxes -->
-
      <div class="contact-boxes">
       <div class="contact-box">
         <i class="icon fas fa-envelope"></i>
-        <h3>Email</h3>
-        <p>nepalshovit@gmail.com</p>
+        <div>
+          <h3>Email</h3>
+          <p>nepalshovit@gmail.com</p>
+        </div>
       </div>
       <div class="contact-box">
         <i class="icon fas fa-phone"></i>
-        <h3>Phone</h3>
-        <p>+977 9842087460</p>
+        <div>
+          <h3>Phone</h3>
+          <p>+977 9842087460</p>
+        </div>
       </div>
       <div class="contact-box">
         <i class="icon fas fa-map-marker-alt"></i>
-        <h3>Location</h3>
-        <p>Balkumari, Lalitpur, Nepal</p>
-        
+        <div>
+          <h3>Location</h3>
+          <p>Balkumari, Lalitpur, Nepal</p>
+        </div>
       </div>
      </div>
     </div>
