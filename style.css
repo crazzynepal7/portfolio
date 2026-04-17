@@ -477,45 +477,55 @@ section {
 
 .skills-box {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
+}
+
+.skill {
     background: var(--bg-card);
-    padding: 50px;
-    border-radius: 24px;
     border: 1px solid var(--border-light);
-}
-
-.skill p {
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
+    padding: 35px 20px;
+    border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
 }
 
-.skill p span {
-    color: var(--accent);
-    font-weight: 800;
+.skill i, .skill img {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.4s ease;
+    object-fit: contain;
 }
 
-.skill-bar {
-    width: 100%;
-    height: 14px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 20px;
-    border: 1px solid var(--border-light);
-    overflow: hidden;
-    position: relative;
+.skill:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 15px 30px var(--accent-glow);
+    color: var(--text-main);
 }
 
-.skill-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), #ffaa42);
-    border-radius: 20px;
-    box-shadow: 0 0 15px var(--accent-glow);
-    font-size: 0; 
-    width: 0; 
-    transition: width 1.5s cubic-bezier(0.1, 0.5, 0.1, 1);
+.skill:hover i, .skill:hover img {
+    transform: scale(1.15);
 }
+
+.skill.hbase i { color: #12b5cb; }
+.skill.cassandra i { color: #419cdc; }
+.skill.hadoop i { color: #ffcc00; }
+.skill.rdbms i { color: #00758F; }
+.skill.flink i { color: #e6522c; }
+.skill.redis i { color: #dc382d; }
+.skill.kafka i { color: #f2f2f2; }
+.skill.tidb i { color: #3B72F2; }
 
 /* GALLERY */
 #gallery {
@@ -759,7 +769,6 @@ footer {
 @media (max-width: 600px) {
     .contact-box { flex-direction: column; text-align: center; padding: 30px 15px; }
     .contact-box .icon { margin-bottom: 15px; }
-    .skills-box { padding: 30px 20px; }
     .info-button { padding: 15px 25px; width: 100%; }
     .cv-button .cv { width: 100%; }
 }
