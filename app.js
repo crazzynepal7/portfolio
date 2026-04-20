@@ -58,6 +58,21 @@ console.error("Element with ID '" + id + "' not found.");
    );
 
    fills.forEach((fill) => observer.observe(fill));
+
+   // Typing Effect
+   const text = "Database Developer & Creative Designer";
+   const typingElement = document.getElementById("typing-effect");
+   let index = 0;
+
+   function typeWriter() {
+     if (typingElement && index < text.length) {
+       typingElement.innerHTML += text.charAt(index);
+       index++;
+       setTimeout(typeWriter, 40); // decreased delay for faster typing
+     }
+   }
+
+   if (typingElement) {
+     typeWriter();
+   }
  });
-
-
