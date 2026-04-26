@@ -82,14 +82,17 @@ function changePaper(pdfName, title, description, btnElement) {
   // Update iframe source
   const viewer = document.getElementById("pdf-viewer");
   if(viewer) {
-    viewer.src = pdfName + "#toolbar=0";
+    viewer.src = pdfName;
   }
   
   // Update header title and desc
   const titleEl = document.getElementById("active-paper-title");
   const descEl = document.getElementById("active-paper-desc");
+  const downloadEl = document.getElementById("active-paper-download");
+  
   if(titleEl) titleEl.innerText = title;
   if(descEl) descEl.innerText = description;
+  if(downloadEl) downloadEl.href = pdfName;
   
   // Update active button styling
   const buttons = document.querySelectorAll(".paper-btn");

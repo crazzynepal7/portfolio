@@ -75,7 +75,7 @@
         <ul class="about-list" style="list-style-type: square;">
           <li><b>Full Name :</b> Shovit Nepal</li>
           <li><b>Date of birth :</b> June 12 1998</li>
-          <li><b>Job :</b> Freelancer, App and Web Developer, Networking</li>
+          <li><b>Job :</b> Database Administrator, Networking</li>
           <li><b>Email :</b> nepalshovit@gmail.com</li>
           <li><b>Home Address :</b> Prativa Marg, Biratnagar 10, Morang</li>
           <li><b>Current Address :</b> Balkumari, Lalitpur</li>
@@ -255,9 +255,17 @@
 
       <div class="paper-content">
         <div class="paper-header">
-          <h3 id="active-paper-title">HBase Setup Guide</h3>
-          <p id="active-paper-desc">A complete guide to configuring and deploying an Apache HBase cluster on top of
-            HDFS, including ZooKeeper coordination and node tuning.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+            <div style="flex: 1; min-width: 250px;">
+              <h3 id="active-paper-title">HBase Setup Guide</h3>
+              <p id="active-paper-desc">A complete guide to configuring and deploying an Apache HBase cluster on top of
+                HDFS, including ZooKeeper coordination and node tuning.</p>
+            </div>
+            <a id="active-paper-download" href="research1.pdf" target="_blank"
+              style="padding: 10px 20px; font-size: 0.95rem; font-weight: 600; background: transparent; border: 2px solid var(--accent); color: var(--accent); border-radius: 50px; text-decoration: none; transition: all 0.3s ease; white-space: nowrap;">
+              <i class="fas fa-external-link-alt" style="margin-right: 5px;"></i> Open PDF
+            </a>
+          </div>
         </div>
         <div class="pdf-frame-container">
           <div class="pdf-browser-bar">
@@ -266,7 +274,7 @@
             <span class="dot green"></span>
             <div class="pdf-address-bar">document-viewer.pdf</div>
           </div>
-          <iframe id="pdf-viewer" src="research1.pdf#toolbar=0" class="pdf-viewer"></iframe>
+          <iframe id="pdf-viewer" src="research1.pdf" class="pdf-viewer"></iframe>
         </div>
       </div>
     </div>
