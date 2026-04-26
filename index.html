@@ -23,6 +23,7 @@
         <li><button onclick="toScreen('home')">Home</button></li>
         <li><button onclick="toScreen('about')">About Me</button></li>
         <li><button onclick="toScreen('service')">Service</button></li>
+        <li><button onclick="toScreen('research')">Research</button></li>
         <li><button onclick="toScreen('gallery')">Gallery</button></li>
         <li><button onclick="toScreen('contact')">Contact</button></li>
       </ul>
@@ -225,24 +226,49 @@
 
   </section>
 
+  <section id="research">
+    <h1 class="research-title" style="font-size: 3rem; font-weight: 800; text-align: center; color: var(--text-main); margin-bottom: 30px; position: relative; display: block;">RESEARCH & PUBLICATIONS</h1>
+    <p class="about-description" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        Explore my latest academic and professional research in database infrastructure, distributed systems, and real-time data pipelines.
+    </p>
+
+    <div class="research-wrapper">
+      <div class="paper-sidebar">
+         <div class="paper-buttons-vertical">
+          <button class="paper-btn active" onclick="changePaper('research1.pdf', 'Distributed Database Optimization', 'A deep dive into query execution strategies, sharding techniques, and replication algorithms in highly available NoSQL environments like Cassandra and HBase.', this)">
+             <i class="fas fa-file-pdf"></i> Architecture
+          </button>
+          <button class="paper-btn" onclick="changePaper('research2.pdf', 'Cassandra Setup Guide', 'A comprehensive step-by-step guide for deploying, configuring, and optimizing an Apache Cassandra cluster for high availability.', this)">
+             <i class="fas fa-file-pdf"></i> Cassandra
+          </button>
+          <button class="paper-btn" onclick="changePaper('research3.pdf', 'Modern Data Lakes vs Data Warehouses', 'An architectural comparison of traditional Hadoop HDFS deployments versus modern cloud-native Data Lakehouses utilizing Apache Iceberg and TiDB.', this)">
+             <i class="fas fa-file-pdf"></i> Infrastructure
+          </button>
+        </div>
+      </div>
+
+      <div class="paper-content">
+         <div class="paper-header">
+            <h3 id="active-paper-title">Distributed Database Optimization</h3>
+            <p id="active-paper-desc">A deep dive into query execution strategies, sharding techniques, and replication algorithms in highly available NoSQL environments like Cassandra and HBase.</p>
+         </div>
+         <div class="pdf-frame-container">
+            <div class="pdf-browser-bar">
+               <span class="dot red"></span>
+               <span class="dot yellow"></span>
+               <span class="dot green"></span>
+               <div class="pdf-address-bar">document-viewer.pdf</div>
+            </div>
+            <iframe id="pdf-viewer" src="research1.pdf#toolbar=0" class="pdf-viewer"></iframe>
+         </div>
+      </div>
+    </div>
+  </section>
+
   <section id="gallery">
     <h1 class="gallery-info">GALLERY</h1>
-
-    <h2 class="blog" style="display: block;">RESEARCH PAPERS</h2>
-    
-    <div class="paper-buttons">
-      <button class="paper-btn active" onclick="changePaper('research1.pdf', this)">Research Paper 1</button>
-      <button class="paper-btn" onclick="changePaper('research2.pdf', this)">Research Paper 2</button>
-      <button class="paper-btn" onclick="changePaper('research3.pdf', this)">Research Paper 3</button>
-    </div>
-
-    <div class="research-container">
-      <!-- The #toolbar=0 prevents standard download buttons from appearing in the PDF viewer -->
-      <!-- Replace 'research1.pdf', 'research2.pdf', etc. with your actual PDF file names -->
-      <iframe id="pdf-viewer" src="research1.pdf#toolbar=0" class="pdf-viewer"></iframe>
-    </div>
-
-    <h2 class="blog" style="display: block; margin-top: 60px;">MY PHOTOS</h2>
+    <p style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 50px;">A collection of my recent captures and memories.</p>
+    <!-- <h2 class="blog" style="display: block; margin-top: 60px;">MY PHOTOS</h2> -->
     <div class="gallery-container">
       <img src="Image/9.jpg" alt="9">
       <img src="Image/2.jpg" alt="2">
@@ -264,11 +290,7 @@
     <!-- <h2 class="contact-description">FEEL FREE TO CONTACT ME</h2> -->
     <div class="contact-container">
       <!-- contact-form -->
-      <form class="contact-form" action="https://formsubmit.co/nepalshovit@gmail.com" method="POST">
-        <!-- Optional: Add a hidden subject field -->
-        <input type="hidden" name="_subject" value="New message from your portfolio!">
-        <!-- Optional: Disable captcha for better user experience -->
-        <input type="hidden" name="_captcha" value="false">
+      <form class="contact-form" action="https://formspree.io/f/xgorbwjn" method="POST">
 
         <input type="text" name="Name" placeholder="Your Name" required>
         <input type="email" name="Email" placeholder="Your Email" required>

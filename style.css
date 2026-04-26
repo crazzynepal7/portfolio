@@ -533,54 +533,159 @@ section {
     background: var(--bg-secondary);
 }
 
-.research-container {
-    max-width: 1000px;
-    margin: 0 auto 60px auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
+/* RESEARCH & PUBLICATIONS */
+#research {
+    background: var(--bg-main); /* contrast against gallery */
 }
 
-.paper-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+.research-title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background: var(--accent);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.research-wrapper {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 30px;
     padding: 0 20px;
+}
+
+.paper-sidebar {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 25px 20px;
+    backdrop-filter: blur(10px);
+    height: fit-content;
+}
+
+.paper-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .paper-btn {
-    background: transparent;
-    border: 2px solid var(--accent);
-    color: var(--accent);
-    padding: 10px 25px;
-    font-size: 1rem;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--border-light);
+    color: var(--text-muted);
+    padding: 16px 20px;
+    font-size: 1.05rem;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.paper-btn i {
+    font-size: 1.3rem;
+    color: var(--accent);
 }
 
 .paper-btn:hover {
-    box-shadow: 0 5px 15px var(--accent-glow);
-    transform: translateY(-2px);
+    background: rgba(255, 140, 0, 0.1);
+    border-color: rgba(255, 140, 0, 0.4);
+    transform: translateX(5px);
+    color: var(--text-main);
 }
 
 .paper-btn.active {
     background: var(--accent);
     color: #fff;
-    box-shadow: 0 4px 15px var(--accent-glow);
+    border-color: var(--accent);
+    box-shadow: 0 8px 25px var(--accent-glow);
+    transform: scale(1.02);
+}
+
+.paper-btn.active i {
+    color: #fff;
+}
+
+.paper-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paper-header {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.paper-header h3 {
+    color: var(--text-main);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.paper-header p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.pdf-frame-container {
+    background: #1e1e1e; /* dark frame for PDF */
+    border-radius: 20px;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-browser-bar {
+    background: #2d2d2d;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #111;
+}
+
+.pdf-browser-bar .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.pdf-browser-bar .dot.red { background: #ff5f56; }
+.pdf-browser-bar .dot.yellow { background: #ffbd2e; }
+.pdf-browser-bar .dot.green { background: #27c93f; }
+
+.pdf-address-bar {
+    background: #1e1e1e;
+    color: #888;
+    font-size: 0.85rem;
+    padding: 6px 15px;
+    border-radius: 8px;
+    margin-left: 15px;
+    flex: 1;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .pdf-viewer {
     width: 100%;
-    height: 700px;
+    height: 750px;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     background: #fff;
-    border: 1px solid var(--border-light);
 }
 
 .blog {
@@ -766,6 +871,21 @@ footer {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
+    .research-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .paper-buttons-vertical {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .paper-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
     .home-content {
         flex-direction: column-reverse;
         text-align: center;

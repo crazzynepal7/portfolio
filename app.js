@@ -78,12 +78,18 @@ console.error("Element with ID '" + id + "' not found.");
  });
 
 // Change Research Paper PDF
-function changePaper(pdfName, btnElement) {
+function changePaper(pdfName, title, description, btnElement) {
   // Update iframe source
   const viewer = document.getElementById("pdf-viewer");
   if(viewer) {
     viewer.src = pdfName + "#toolbar=0";
   }
+  
+  // Update header title and desc
+  const titleEl = document.getElementById("active-paper-title");
+  const descEl = document.getElementById("active-paper-desc");
+  if(titleEl) titleEl.innerText = title;
+  if(descEl) descEl.innerText = description;
   
   // Update active button styling
   const buttons = document.querySelectorAll(".paper-btn");
