@@ -538,6 +538,25 @@ section {
     background: var(--bg-main); /* contrast against gallery */
 }
 
+.research-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-main);
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+}
+
+.research-desc {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .research-title::after {
     content: '';
     position: absolute;
@@ -567,6 +586,7 @@ section {
     padding: 25px 20px;
     backdrop-filter: blur(10px);
     height: fit-content;
+    overflow: hidden;
 }
 
 .paper-buttons-vertical {
@@ -908,7 +928,7 @@ footer {
 
 @media (max-width: 768px) {
     .home-intro { font-size: 2.8rem; }
-    .about-info, .ser-info, .gallery-info, .contact-info { font-size: 2.5rem; }
+    .about-info, .ser-info, .gallery-info, .contact-info, .research-title { font-size: 2.5rem; }
     
     #dropdown {
         display: none;
@@ -942,4 +962,11 @@ footer {
     .contact-box .icon { margin-bottom: 15px; }
     .info-button { padding: 15px 25px; width: 100%; }
     .cv-button .cv { width: 100%; }
+    
+    .about-info, .ser-info, .gallery-info, .contact-info, .research-title { font-size: 2rem; }
+    .home-image img { width: 100%; max-width: 300px; height: auto; aspect-ratio: 3/4; }
+    
+    .pdf-viewer { height: 500px; }
+    .paper-header { padding: 20px; }
+    .paper-header h3 { font-size: 1.4rem; }
 }
