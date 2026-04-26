@@ -227,7 +227,22 @@
 
   <section id="gallery">
     <h1 class="gallery-info">GALLERY</h1>
-    <h2 class="blog">MY BLOG</h2>
+
+    <h2 class="blog" style="display: block;">RESEARCH PAPERS</h2>
+    
+    <div class="paper-buttons">
+      <button class="paper-btn active" onclick="changePaper('research1.pdf', this)">Research Paper 1</button>
+      <button class="paper-btn" onclick="changePaper('research2.pdf', this)">Research Paper 2</button>
+      <button class="paper-btn" onclick="changePaper('research3.pdf', this)">Research Paper 3</button>
+    </div>
+
+    <div class="research-container">
+      <!-- The #toolbar=0 prevents standard download buttons from appearing in the PDF viewer -->
+      <!-- Replace 'research1.pdf', 'research2.pdf', etc. with your actual PDF file names -->
+      <iframe id="pdf-viewer" src="research1.pdf#toolbar=0" class="pdf-viewer"></iframe>
+    </div>
+
+    <h2 class="blog" style="display: block; margin-top: 60px;">MY PHOTOS</h2>
     <div class="gallery-container">
       <img src="Image/9.jpg" alt="9">
       <img src="Image/2.jpg" alt="2">

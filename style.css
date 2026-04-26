@@ -533,6 +533,56 @@ section {
     background: var(--bg-secondary);
 }
 
+.research-container {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.paper-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.paper-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.paper-btn:hover {
+    box-shadow: 0 5px 15px var(--accent-glow);
+    transform: translateY(-2px);
+}
+
+.paper-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background: #fff;
+    border: 1px solid var(--border-light);
+}
+
 .blog {
     text-align: center;
     color: var(--accent);
