@@ -136,5 +136,27 @@ function changePaper(pdfName, title, description, btnElement) {
   btnElement.classList.add("active");
 }
 
+function openCertificate(pdfName, title) {
+  const viewer = document.getElementById('certificate-viewer');
+  const iframe = document.getElementById('certificate-iframe');
+  const fileName = document.getElementById('certificate-file-name');
+  if (iframe) iframe.src = pdfName;
+  if (fileName) fileName.innerText = title;
+  if (viewer) {
+    viewer.classList.remove('hidden');
+    viewer.setAttribute('aria-hidden', 'false');
+  }
+}
+
+function closeCertificate() {
+  const viewer = document.getElementById('certificate-viewer');
+  const iframe = document.getElementById('certificate-iframe');
+  if (iframe) iframe.src = '';
+  if (viewer) {
+    viewer.classList.add('hidden');
+    viewer.setAttribute('aria-hidden', 'true');
+  }
+}
+
 
 
